@@ -22,3 +22,4 @@ exec gnome-session
 
 #if the file don't work rename it and put it in /etc/X11/xinit/xinitrc.d/ directory,
 #and comment line 2-3-4-5-6-7-8-9-10-11-12 or remove it
+#remember to give at the file the chmod 777 permissions
