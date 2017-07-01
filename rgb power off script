@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+msi-keyboard -m normal -c left,off,high -c middle,off,high -c right,off,high 
