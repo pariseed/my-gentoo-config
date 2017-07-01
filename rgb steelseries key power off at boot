@@ -1,0 +1,8 @@
+[Unit]
+Description=keyboard colour stop Service
+
+[Service]
+ExecStart=/usr/bin/msikey
+
+[Install]
+WantedBy=graphical.target
