@@ -1,0 +1,8 @@
+--- a/kernel/locking/mutex-debug.c
++++ b/kernel/locking/mutex-debug.c  
+@@ -117,4 +117,4 @@ 
+     lock->magic = NULL; 
+
+
+-EXPORT_SYMBOL_GPL(mutex_destroy); 
++EXPORT_SYMBOL(mutex_destroy); 
