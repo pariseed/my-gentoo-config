@@ -7,6 +7,7 @@
 
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
+alias vi='vim'
 #PS1='[\u@\h \W]\$ '
 
 #PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W 
