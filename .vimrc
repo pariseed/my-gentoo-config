@@ -1,6 +1,6 @@
 set number
 
-colorscheme ron
+colorscheme my
 
 set cursorcolumn
 "set cursorline
