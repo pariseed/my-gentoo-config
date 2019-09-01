@@ -1,0 +1,17 @@
+#!/bin/bash
+
+while true; 
+do
+	if [ $(/usr/bin/pacmd list-sink-inputs | grep RUNNING | wc -l) -eq 0 ];
+	then
+		#echo "no streaming audio running"
+		#:
+		sleep 30
+
+	else
+		#echo "found streaming audio running"
+		/usr/bin/xscreensaver-command -deactivate &> /dev/null
+		sleep 30
+	fi	
+	
+done
