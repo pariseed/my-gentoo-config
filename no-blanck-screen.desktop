@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Screensaver stop
+Type=Application
+Exec=no-blank-screen
+Terminal=false
