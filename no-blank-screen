@@ -1,11 +1,12 @@
 #!/bin/bash
 
+#this script get app that are using pulseaudio to streaming audio flows, and disallow xscreensaver to blank the screen
+
 while true; 
 do
 	if [ $(/usr/bin/pacmd list-sink-inputs | grep RUNNING | wc -l) -eq 0 ];
 	then
 		#echo "no streaming audio running"
-		#:
 		sleep 30
 
 	else
