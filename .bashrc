@@ -17,3 +17,10 @@ alias vi='vim'
 
 PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W
 \$\[\033[1;92m\] '
+
+
+export PROMPT_COMMAND="history -a; history -n"
+
+export HISTSIZE=10000
+
+export HISTCONTROL=ignoredups:erasedups
