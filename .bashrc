@@ -17,10 +17,13 @@ alias vi='vim'
 #PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W 
 #\$\[\033[00m\] '
 
+#PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W\e[0m
+#\$ '
 
 PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W
 \$\[\033[1;92m\] '
 
+stty -ixon
 
 export PROMPT_COMMAND="history -a; history -n"
 
