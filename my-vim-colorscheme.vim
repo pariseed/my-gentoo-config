@@ -1,3 +1,4 @@
+" koehler colorscheme modified
 " local syntax file - set colors on a per-machine basis:
 " vim: tw=0 ts=4 sw=4
 " Vim color file
