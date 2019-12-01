@@ -3,5 +3,13 @@ set number
 colorscheme my
 
 set cursorcolumn
-"set cursorline
 
+
+function! s:DiffWithSaved()
+  let filetype=&ft
+  diffthis
+  vnew | r # | normal! 1Gdd
+  diffthis
+  exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! Diffsaved call s:DiffWithSaved()
