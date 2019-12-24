@@ -30,3 +30,7 @@ export PROMPT_COMMAND="history -a; history -n"
 export HISTSIZE=10000
 
 export HISTCONTROL=ignoredups:erasedups
+
+
+alias kb="kubectl "
+source <(kubectl completion bash | sed 's|__start_kubectl kubectl|__start_kubectl kb|g')
