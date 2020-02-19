@@ -31,6 +31,7 @@ export HISTSIZE=10000
 
 export HISTCONTROL=ignoredups:erasedups
 
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 
 alias kb="kubectl "
 source <(kubectl completion bash | sed 's|__start_kubectl kubectl|__start_kubectl kb|g')
