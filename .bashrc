@@ -8,9 +8,9 @@
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias vi='vim'
+#alias kb="kubectl "
+#source <(kubectl completion bash | sed 's|__start_kubectl kubectl|__start_kubectl kb|g')
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
 
 #PS1='[\u@\h \W]\$ '
 
@@ -25,13 +25,14 @@ PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W
 
 stty -ixon
 
-#export PROMPT_COMMAND="history -a; history -n"
 
 export HISTSIZE=10000
 
 export HISTCONTROL=ignoredups:erasedups
 
-export PROMPT_COMMAND='history -a; history -n; echo -ne "\033]0;${PWD}\007"'
+function cd {
+    builtin cd $@
+    pwd > ~/.last_dir
+}
 
-alias kb="kubectl "
-source <(kubectl completion bash | sed 's|__start_kubectl kubectl|__start_kubectl kb|g')
+PROMPT_COMMAND='cd $(cat ~/.last_dir); history -a; history -n; echo -ne "\033]0;${PWD}\007"'
