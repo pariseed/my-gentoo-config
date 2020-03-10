@@ -35,4 +35,6 @@ function cd {
     pwd > ~/.last_dir
 }
 
-PROMPT_COMMAND='cd $(cat ~/.last_dir); history -a; history -n; echo -ne "\033]0;${PWD}\007"'
+cd $(cat ~/.last_dir)
+
+PROMPT_COMMAND='history -a; history -n; echo -ne "\033]0;${PWD}\007"'
