@@ -4,6 +4,8 @@ colorscheme my
 
 set cursorcolumn
 
+nnoremap d "_d
+vnoremap d "_d
 
 function! s:DiffWithSaved()
   let filetype=&ft
