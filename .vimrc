@@ -7,6 +7,10 @@ set cursorcolumn
 nnoremap d "_d
 vnoremap d "_d
 
+nnoremap x "_x
+vnoremap x "_x
+
+
 function! s:DiffWithSaved()
   let filetype=&ft
   diffthis
