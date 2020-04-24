@@ -1,8 +1,12 @@
 set number
 
-colorscheme my
+set splitright
 
 set cursorcolumn
+
+
+colorscheme my
+
 
 nnoremap d "_d
 vnoremap d "_d
