@@ -37,4 +37,6 @@ function cd {
 
 cd $(cat ~/.last_dir)
 
+trap 'printf "\033]0;%s\007" "${BASH_COMMAND//[^[:print:]]/}"' DEBUG
+
 PROMPT_COMMAND='history -a; history -n; echo -ne "\033]0;${PWD}\007"'
