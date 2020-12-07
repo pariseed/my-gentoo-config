@@ -4,6 +4,8 @@ set splitright
 
 set cursorcolumn
 
+set history=1000
+
 
 colorscheme my
 
