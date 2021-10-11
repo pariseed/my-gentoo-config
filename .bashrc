@@ -27,9 +27,14 @@ PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W
 stty -ixon
 
 
+export GOPATH=$HOME/go
+
+export EDITOR=/usr/bin/vim 
+
 export HISTSIZE=10000
 
 export HISTCONTROL=ignoredups:erasedups
+
 
 function cd {
     builtin cd $@
@@ -37,6 +42,7 @@ function cd {
 }
 
 cd $(cat ~/.last_dir)
+
 
 trap 'printf "\033]0;%s\007" "${BASH_COMMAND//[^[:print:]]/}"' DEBUG
 
