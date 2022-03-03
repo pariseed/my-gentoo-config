@@ -21,6 +21,9 @@ nnoremap x "_x
 vnoremap x "_x
 
 
+runtime! ftplugin/man.vim
+
+
 "show difference betweeen edited buffer and original file
 function! s:DiffWithSaved()
   let filetype=&ft
