@@ -13,7 +13,7 @@ colorscheme my
 "press cntrl+P to re-execute last command
 noremap <C-P> @:<CR>
 
-"when somithing is delete with dd or x this will be lost and not preserved in any registry
+"when something is delete with dd or x this will be lost and not preserved in any registry
 nnoremap d "_d
 vnoremap d "_d
 
@@ -21,6 +21,7 @@ nnoremap x "_x
 vnoremap x "_x
 
 
+"load man page plugin
 runtime! ftplugin/man.vim
 
 
