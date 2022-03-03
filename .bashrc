@@ -9,6 +9,7 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias vi='vim'
 alias regex101="pcregrep --buffer-size=200000 -Mo"
+alias man="vilman"
 #alias kb="kubectl "
 #source <(kubectl completion bash | sed 's|__start_kubectl kubectl|__start_kubectl kb|g')
 
@@ -34,6 +35,11 @@ export EDITOR=/usr/bin/vim
 export HISTSIZE=10000
 
 export HISTCONTROL=ignoredups:erasedups
+
+
+function vilman {
+	vim -c "Man $1" -c "silent only" 
+}
 
 
 function cd {
