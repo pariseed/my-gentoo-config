@@ -10,8 +10,11 @@ alias ls='ls --color=auto'
 alias vi='vim'
 alias regex101="pcregrep --buffer-size=200000 -Mo"
 alias man="vilman"
+alias myip="nslookup -debug myip.opendns.com resolver1.opendns.com | grep 'internet address' | sed 's/.*internet address =/My Public IP Address:/g'"
+
 #alias kb="kubectl "
 #source <(kubectl completion bash | sed 's|__start_kubectl kubectl|__start_kubectl kb|g')
+
 
 
 #PS1='[\u@\h \W]\$ '
