@@ -15,6 +15,11 @@ alias myip="nslookup -debug myip.opendns.com resolver1.opendns.com | grep 'inter
 #alias kb="kubectl "
 #source <(kubectl completion bash | sed 's|__start_kubectl kubectl|__start_kubectl kb|g')
 
+alias p3="/usr/bin/python3"
+
+alias pd="/usr/bin/podman"
+source <(podman completion bash | sed 's|__start_podman podman|__start_podman pd|g')
+
 
 
 #PS1='[\u@\h \W]\$ '
