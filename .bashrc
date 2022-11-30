@@ -22,18 +22,11 @@ source <(podman completion bash | sed 's|__start_podman podman|__start_podman pd
 
 
 
-#PS1='[\u@\h \W]\$ '
-
-#PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W 
-#\$\[\033[00m\] '
-
-#PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W\e[0m
-#\$ '
 
 PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W
 \$\[\033[1;92m\] '
 
-#allow reverse search in back mode, pay attention with local scp coul give issues
+#allow reverse search in back mode, pay attention with local scp could give issues
 stty -ixon
 
 
