@@ -33,6 +33,7 @@ source <(podman completion bash | sed 's|__start_podman podman|__start_podman pd
 PS1='\[\e[1;96m\]\u@\[\e[1;93m\]\h: \W
 \$\[\033[1;92m\] '
 
+#allow reverse search in back mode, pay attention with local scp coul give issues
 stty -ixon
 
 
